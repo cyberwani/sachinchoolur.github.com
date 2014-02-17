@@ -1,3 +1,11 @@
+/** ==========================================================
+
+* jquery lightGallery.js v1.0
+* http://sachinchoolur.github.io/lightGallery/
+* Released under the Apache License - http://opensource.org/licenses/Apache-2.0
+
+=========================================================/**/
+
 ;(function($){
 	"use strict";
 	$.fn.lightGallery = function(options) {
