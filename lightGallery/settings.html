@@ -58,8 +58,9 @@
                     <h2 class="title">JQuery LightGallery Settings</h2>	 	
                 </section>
                 <section class="options">
-                	<pre class="prettyprint linenums">mode:'slide'
-// Type of transition 'slide' and 'fade'.</pre>	
+<pre class="prettyprint linenums">mode:'slide'
+// Type of transition 'slide' and 'fade'.
+</pre>	
 <pre class="prettyprint linenums">useCSS : true
 // If true LightGallery will use CSS transitions. if falls jquery animation will be used.</pre>	
 
@@ -71,11 +72,22 @@
 // Transition duration (in ms). 
 // ex = speed:'1000';</pre>	
 
-<pre class="prettyprint linenums">useCSS : true,
-// If true LightGallery will use CSS transitions. if falls jquery animation will be used.</pre>	
-
 <pre class="prettyprint linenums">loop: false,
 // // If false, will disable the ability to loop back to the beginning of the slide when on the last element.</pre>	
+
+<pre class="prettyprint linenums">auto: false,
+// If true, the Slider will automatically start to play.</pre>
+
+<pre class="prettyprint linenums">pause: 4000,
+// The time (in ms) between each auto transition</pre>	
+
+<pre class="prettyprint linenums">escKey:true,
+// Use escape key to close the LightGallery. switch escKey:false, to disable</pre>
+
+<pre class="prettyprint linenums">rel:true,
+// Combine two galleries using data-rel attribute. give same data-rel value for multiple galleries you wish to combine
+<a href="examples.html#relBlock">goTo example →</a>
+</pre>
 
 <pre class="prettyprint linenums">exThumbImage: false,
 // In case if you want to use external image as slider thumbnail add the path of the image inside "data-" attribute &nbsp;&nbsp; and change exThumbImage:'data-yourAttribute';
@@ -93,8 +105,11 @@
 // swich desc:true to enable image caption. add Image descriptions inside "data-desc" attribute.
 // HTML markup = &lt;li data-desc="Image Descriptions" data-src="img/img1.jpg"&gt;&lt;img src="img/thumb1.jpg" /&gt;&lt;/li&gt;</pre>
 
-<pre class="prettyprint linenums">escKey:true,
-// Use escape key to close the LightGallery. switch escKey:false, to disable</pre>
+<pre class="prettyprint linenums">controls:true,
+// if controls:false, controls will not be added</pre>
+
+<pre class="prettyprint linenums">hideControlOnEnd:false,
+// if hideControlOnEnd:true, control will be hidden on last slide</pre>
 
 <pre class="prettyprint linenums">mobileSrc: true,
 // To make your website faster in mobile devices you can load separate images (low quality) for Mobile devices. Add &nbsp;&nbsp; the path of the image which you wish to load in mobile devices inside data-responsive-src="" attribute. 
@@ -111,22 +126,15 @@
 <pre class="prettyprint linenums">videoAutoplay:true,
 // switch videoAutoplay:false to disable video autoplay option</pre>
 
-<pre class="prettyprint linenums">controls:true,
-// if controls:false, controls will not be added</pre>
-
-<pre class="prettyprint linenums">hideControlOnEnd:false,
-// if hideControlOnEnd:true, control will be hidden on last slide</pre>
-
 <pre class="prettyprint linenums">swipeThreshold: 50,,
 // By setting the swipeThreshold you can set how far the user must swipe for the next/prev slide 
 // ex swipeThreshold: 100, (in px);
 </pre>
 
-<pre class="prettyprint linenums">auto: false,
-// If true, the Slider will automatically start to play.</pre>
-
-<pre class="prettyprint linenums">pause: 4000,
-// The time (in ms) between each auto transition</pre>
+<pre class="prettyprint linenums">dynamic: true,
+// You can dynamically load lightGallery by passing an array object to the lightGallery.
+<a href="examples.html#dynamicBlock">goTo example →</a>
+</pre>
 
 <pre class="prettyprint linenums">onOpen: function() {},
 // Executes immediately after the slider is loaded</pre>
